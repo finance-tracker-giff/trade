@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Stock Analyzer</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📈 AI Stock Analyzer Dashboard</h1>
+      <p>Analyze trend, probability, entry/target/stoploss, scanner, and advanced AI signals.</p>
+    </header>
+
+    <section class="card analyzer-card">
+      <h2>Stock Analyzer</h2>
+      <div class="controls">
+        <input id="symbolInput" type="text" placeholder="Enter stock symbol (e.g., RELIANCE)" value="RELIANCE" />
+        <button id="analyzeBtn">Analyze</button>
+      </div>
+      <pre id="analyzeResult">Run analysis to view output…</pre>
+    </section>
+
+    <section class="card scanner-card">
+      <h2>Market Scanner</h2>
+      <button id="scanBtn">Run Scanner</button>
+      <div class="scanner-grid">
+        <div>
+          <h3>Top Bullish Stocks</h3>
+          <ul id="bullishList"></ul>
+        </div>
+        <div>
+          <h3>Top Bearish Stocks</h3>
+          <ul id="bearishList"></ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
